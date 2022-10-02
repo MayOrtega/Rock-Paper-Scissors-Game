@@ -75,8 +75,6 @@ gameScore = () => {
     
     }else if(selectMachine == '2' && selectUser == '1'){
         incrementMachineScore();   
-    }else if(selectMachine === selectUser){
-        alert('Try Again')
     }
     return;
 }
@@ -84,13 +82,13 @@ gameScore = () => {
 controlWiner = () => {
     let counter = parseInt(document.getElementById('score-user').innerHTML);
     if(counter === 3){
-        alert('You Win!!!')
+        document.getElementById('result-message').innerHTML = "You Win! 🤩";
         resetCounters();
         return;
     
     } counter = parseInt(document.getElementById('score-machine').innerHTML);
     if(counter === 3){
-        alert('You Lose, try again!')
+        document.getElementById('result-message').innerHTML = "You Lose! 👻";
         resetCounters();
         return;
 }
