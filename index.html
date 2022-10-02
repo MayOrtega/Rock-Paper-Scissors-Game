@@ -18,18 +18,18 @@
                 <h2 class="span-timer">3</h2>
             </section>
             <section class="sub-titles">
-            <h2 class="subtitle-user">User: <span>0</span></h2>
-            <h2 class="subtitle-machine">Machine: <span>0</span></h2>
+            <h2 class="subtitle-user">User: <span id="score-user">0</span></h2>
+            <h2 class="subtitle-machine">Machine: <span id="score-machine">0</span></h2>
             </section>
             <section class="section-game">
-                    <img src="./img/tijeras.png" alt="scissor" class="img-user">
-                    <img src="./img/asteroide.png" alt="rock" class="img-user">
+                    <img src="./img/tijeras.png" alt="scissor" class="img-machine" id="img-machine">
+                    <img src="./img/asteroide.png" alt="rock" class="img-user" id="img-user">
                    
             </section>
             <section class="user-game">
-                        <button><img src="./img/asteroide.png" alt="rock"></button>
-                        <button><img src="./img/papel-higienico.png" alt=""></button>
-                        <button><img src="./img/tijeras.png" alt=""></button>
+                        <button onclick="showRock()"><img src="./img/asteroide.png" alt="rock"></button>
+                        <button onclick="showPaper()"><img src="./img/papel-higienico.png" alt=""></button>
+                        <button onclick="showScissors()"><img src="./img/tijeras.png" alt=""></button>
                     
             </section> 
        
