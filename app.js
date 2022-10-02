@@ -53,7 +53,7 @@ incrementMachineScore = () => {
     return;
 }
 
-score = () => {
+gameScore = () => {
     let selectUser, selectMachine;
     selectUser = document.getElementById('img-user').value;
     selectMachine = document.getElementById('img-machine').value;
@@ -91,13 +91,24 @@ controlWiner = () => {
     } counter = parseInt(document.getElementById('score-machine').innerHTML);
     if(counter === 3){
         alert('You Lose, try again!')
+        resetCounters();
+        return;
+}
+return;
+}
 
+resetCounters = () => {
+    document.getElementById('score-user').innerHTML = '0';
+    document.getElementById('score-machine').innerHTML = '0';
+}
+
+runLogic = () => {
+    showRandomImage();
+    gameScore();
+    setInterval(controlWiner, 1000)
 }
 
 
 
 
 
-
-    }
-}
