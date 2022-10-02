@@ -96,8 +96,11 @@ return;
 }
 
 resetCounters = () => {
+    setTimeout(function(){
     document.getElementById('score-user').innerHTML = '0';
     document.getElementById('score-machine').innerHTML = '0';
+    location.reload()
+}, 2000);
 }
 
 runLogic = () => {
