@@ -67,12 +67,12 @@ article{
   position: absolute;
   bottom: 10px;
   padding: 1%;
-  animation-name: parpadeo;
+  animation-name: you-start;
   animation-duration: 1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 
-  -webkit-animation-name:parpadeo;
+  -webkit-animation-name:you-start;
   -webkit-animation-duration: 1s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
@@ -180,6 +180,40 @@ button{
   margin-top: 5%;
   box-shadow: #000000 5px 5px 5px;
   padding: 1%;
+}
+
+.you-start{
+  font-family: 'Space Grotesk', sans-serif;
+  position: absolute;
+  left: 38%;
+  top: 90%;
+  animation-name: you-start;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+
+-webkit-animation-name:you-start;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes you-start{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes you-start {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes you-start {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
 }
 
 button:hover{
