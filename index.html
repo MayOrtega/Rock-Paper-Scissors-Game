@@ -4,15 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock, Paper or Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Jan Ken Pon!</title>
 </head>
 <body>
-    <div id="juego">
-        <h1>Play againts de machine</h1>
-        <div id="piedra"></div>
-        <div id="papel"></div>
-        <div id="tijera"></div>
+    <div class="container">
+        <header>
+            <h1>Jan Ken Pon!</h1>
+        </header>
+        <article>
+            <section class="resultado">
+                <h2 class="timer">Timer</h2>
+                <h2 class="span-timer">3</h2>
+            </section>
+            <section class="sub-titles">
+            <h2 class="subtitle-user">User: <span>0</span></h2>
+            <h2 class="subtitle-machine">Machine: <span>0</span></h2>
+            </section>
+            <section class="section-game">
+                    <img src="./img/tijeras.png" alt="scissor" class="img-user">
+                    <img src="./img/asteroide.png" alt="rock" class="img-user">
+                   
+            </section>
+            <section class="user-game">
+                        <button><img src="./img/asteroide.png" alt="rock"></button>
+                        <button><img src="./img/papel-higienico.png" alt=""></button>
+                        <button><img src="./img/tijeras.png" alt=""></button>
+                    
+            </section> 
+       
+    </article>
     </div>
-    
+    <script src="app.js"></script>
 </body>
 </html>
