@@ -4,11 +4,12 @@ body{
   display: grid;
   place-content: center;
   margin: 0;
+  background-color: #01052e;
 }
 
 .container{
     position: relative;
-  border: solid black 8px;
+  border: solid #dff4ff 8px;
   border-radius: 40px;
   height: 600px;
   width: 300px;
