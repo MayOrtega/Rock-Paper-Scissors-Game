@@ -39,3 +39,53 @@ showRandomImage = () => {
     }
     return;
 }
+
+let num;
+incrementUserScore = () => {
+    num = parseInt(document.getElementById('score-user').innerHTML) + 1;
+    document.getElementById('score-user').innerHTML = num;
+    return;
+}
+
+incrementMachineScore = () => {
+    num = parseInt(document.getElementById('score-machine').innerHTML) + 1;
+    document.getElementById('score-machine').innerHTML = num;
+    return;
+}
+
+score = () => {
+    let selectUser, selectMachine;
+    selectUser = document.getElementById('img-user').value;
+    selectMachine = document.getElementById('img-machine').value;
+
+    if(selectUser == '0' && selectMachine == '2'){
+        incrementUserScore();
+
+    } else if(selectUser == '1' && selectMachine == '0'){
+        incrementUserScore();
+    
+    }else if(selectUser == '2' && selectMachine == '1'){
+        incrementUserScore();
+    
+    }else  if(selectMachine == '0' && selectUser == '2'){
+        incrementMachineScore();
+
+    } else if(selectMachine == '1' && selectUser == '0'){
+        incrementMachineScore();
+    
+    }else if(selectMachine == '2' && selectUser == '1'){
+        incrementMachineScore();   
+    }else if(selectMachine === selectUser){
+        alert('Try Again')
+    }
+    return;
+}
+
+
+
+
+
+
+
+    }
+}
