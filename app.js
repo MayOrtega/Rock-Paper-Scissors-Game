@@ -81,6 +81,18 @@ score = () => {
     return;
 }
 
+controlWiner = () => {
+    let counter = parseInt(document.getElementById('score-user').innerHTML);
+    if(counter === 3){
+        alert('You Win!!!')
+        resetCounters();
+        return;
+    
+    } counter = parseInt(document.getElementById('score-machine').innerHTML);
+    if(counter === 3){
+        alert('You Lose, try again!')
+
+}
 
 
 
